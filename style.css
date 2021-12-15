@@ -1,4 +1,4 @@
-/* HERE IS A COMMENT */
+
 @import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
 
 body {
@@ -9,7 +9,7 @@ body {
 nav {
     overflow: hidden;
     background-color: white;
-    padding-top: 100vh;
+    padding-top: 2vh;
 }
 
 nav a {
@@ -49,7 +49,7 @@ p {
  .banner-img {
     
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     width: 40%;
     height: 40vh;
 
@@ -72,4 +72,46 @@ p {
 .banner-text h1 {
     padding-bottom: 0;
     margin-bottom: 2vh;
+}
+
+
+/* ---- THREE ROW BOX ---- */
+
+.three-row-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 14.01%;
+}
+
+.one-third-box {
+    border: solid #467846 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 2vh;
+    padding-left: 2vh;
+    padding-bottom: 4vh;
+    padding-top: 4vh;
+
+     width: 25%; 
+     height: 35vh; 
+
+    text-align: center; 
+}
+
+/* I want this one to change when you hover over it */
+.fun-facts .one-third-box h1 {
+    font-weight: 700;
+    font-size: 48px;
+    color: #467846;
+    margin-top: 0;
+    margin-bottom: 0;
+
+}
+
+.fun-facts .one-third-box p {
+    font-weight: 400;
+    font-size: 24px;
+    color: #467846;
 }
