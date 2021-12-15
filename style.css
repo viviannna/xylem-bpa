@@ -1,3 +1,4 @@
+/* HERE IS A COMMENT */
 @import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
 
 body {
@@ -8,13 +9,14 @@ body {
 nav {
     overflow: hidden;
     background-color: white;
+    padding-top: 100vh;
 }
 
 nav a {
     float: left; 
     display: block;
     text-align: left;
-    padding-bottom: 14px;
+    padding-bottom: 5vh;
     padding-left: 6.0%;
     text-decoration: none;
 }
