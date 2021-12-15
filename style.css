@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+body {
+    /*padding: 7.01%; */
+
+}
+
+nav {
+    overflow: hidden;
+    background-color: white;
+}
+
+nav a {
+    float: left; 
+    display: block;
+    text-align: left;
+    padding-bottom: 14px;
+    padding-left: 6.0%;
+    text-decoration: none;
+}
+
+h1 {
+    font-family: 'Karla', sans-serif;
+    font-weight: 700;
+    font-size: 72px;
+}
+
+p {
+    font-family: 'Karla', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: #737E75;
+}
+
+.green {
+    color: #467846;
+}
+
+.banner-home-page {
+    display: flex;
+    padding-left: 7.01%;
+    padding-right: 7.01%;
+    justify-content: center;
+
+}
+
+ .banner-img {
+    
+    display: flex;
+    justify-content: center;
+    width: 40%;
+    height: 40vh;
+
+} 
+
+.banner-text {
+    position: relative;
+    width: 60%;
+    padding: 0;
+    margin: 0;
+    
+    display: flex;
+    flex-direction: column;
+}
+
+.banner-text p {
+    padding-top: 0;
+    margin-top: 0;
+}
+.banner-text h1 {
+    padding-bottom: 0;
+    margin-bottom: 2vh;
+}
