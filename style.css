@@ -40,29 +40,38 @@ p {
 
 .banner-home-page {
     display: flex;
+    align-items: flex-end;
+    position: relative;
+    width: 100%;
+
+    /* display: flex;
     padding-left: 7.01%;
     padding-right: 7.01%;
-    justify-content: center;
+    justify-content: center; */
 
 }
 
- .banner-img {
+ /* .banner-img {
     
     display: flex;
-    /* justify-content: center; */
     width: 40%;
     height: 40vh;
 
-} 
+}  */
 
 .banner-text {
-    position: relative;
-    width: 60%;
-    padding: 0;
+    position: absolute;
+    top: 8px;
+
+    width: 47%;
+
+    padding-left: 7.01%;
     margin: 0;
     
     display: flex;
     flex-direction: column;
+    align-items: center;
+
 }
 
 .banner-text p {
@@ -70,6 +79,7 @@ p {
     margin-top: 0;
 }
 .banner-text h1 {
+    padding-top: 10vh;
     padding-bottom: 0;
     margin-bottom: 2vh;
 }
@@ -82,6 +92,7 @@ p {
     flex-direction: row;
     justify-content: space-between;
     padding: 14.01%;
+    padding-top: 5%;
 }
 
 .one-third-box {
