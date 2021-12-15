@@ -43,35 +43,18 @@ p {
     align-items: flex-end;
     position: relative;
     width: 100%;
+    margin: 0;
+    padding: 0;
 
-    /* display: flex;
-    padding-left: 7.01%;
-    padding-right: 7.01%;
-    justify-content: center; */
 
 }
 
- /* .banner-img {
-    
-    display: flex;
-    width: 40%;
-    height: 40vh;
 
-}  */
+
 
 .banner-text {
-    position: absolute;
-    top: 8px;
-
-    width: 47%;
-
     padding-left: 7.01%;
-    margin: 0;
     
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
 }
 
 .banner-text p {
