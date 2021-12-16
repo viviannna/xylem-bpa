@@ -6,6 +6,13 @@ body {
 
 }
 
+hr {
+    position: relative;
+    width: 35%;
+    border-top: .35vh solid #2b612b;
+
+}
+
 nav {
     overflow: hidden;
     background-color: white;
@@ -24,18 +31,22 @@ nav a {
 h1 {
     font-family: 'Karla', sans-serif;
     font-weight: 700;
-    font-size: 72px;
+    font-size: 50px;
+}
+
+.banner-home-page h1 {
+    font-size: 5vh;
 }
 
 p {
     font-family: 'Karla', sans-serif;
     font-weight: 400;
-    font-size: 24px;
+    font-size: 3vh;
     color: #737E75;
 }
 
 .green {
-    color: #467846;
+    color: #2b612b;
 }
 
 .banner-home-page {
@@ -49,22 +60,26 @@ p {
 
 }
 
-
-
+.logo-img {
+    color:#2b612b;
+}
 
 .banner-text {
     padding-left: 7.01%;
+    width: 50%;
     
 }
 
 .banner-text p {
     padding-top: 0;
     margin-top: 0;
+    margin-bottom: 5vh;
 }
 .banner-text h1 {
-    padding-top: 10vh;
+    padding-top: 3vh;
     padding-bottom: 0;
     margin-bottom: 2vh;
+    font-size: 8vh;
 }
 
 
@@ -74,22 +89,25 @@ p {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 14.01%;
+    padding-left: 14.01%;
+    padding-right: 14.01%;
     padding-top: 5%;
 }
 
 .one-third-box {
-    border: solid #467846 6px;
+    
+    position: relative;
+    border: solid #2b612b 6px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding-right: 2vh;
     padding-left: 2vh;
-    padding-bottom: 4vh;
-    padding-top: 4vh;
+    padding-bottom: 2vh;
+    padding-top: 2vh;
 
-     width: 25%; 
-     height: 35vh; 
+    width: 25%; 
+    height: 35vh; 
 
     text-align: center; 
 }
@@ -97,7 +115,7 @@ p {
 /* I want this one to change when you hover over it */
 .fun-facts .one-third-box h1 {
     font-weight: 700;
-    font-size: 48px;
+    font-size: 4vh;
     color: #467846;
     margin-top: 0;
     margin-bottom: 0;
@@ -106,6 +124,81 @@ p {
 
 .fun-facts .one-third-box p {
     font-weight: 400;
-    font-size: 24px;
-    color: #467846;
+    font-size: 3vh;
+    color: #2b612b;
+}
+
+.center-content {
+    padding-left: 14.02%;
+    padding-right: 14.02%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    
+    text-align: center;
+
+    margin: 0;
+}
+
+/* .action-pages {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    object-fit: fill;
+    width: 25; 
+    height: 35vh; 
+
+    
+} */
+
+/* ACTION CONTAINERS GO HERE */
+
+/* size of each individual image itself */
+.g-hover-container {
+    position: relative;
+    width: 400px;
+
+}
+
+.g-hover-img {
+    display: block;
+    width: 100%;   /* ensures that the image takes up its full given space */
+
+
+}
+
+.g-hover-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    /* ^^ Works with position:relative of g-hover-container */
+    width: 100%;
+    height: 100%;
+    background: rgba(70,120,70,.70);
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0;
+
+
+}
+
+.g-hover-overlay:hover {
+    opacity: 1;
+}
+
+
+
+.g-hover-overlay h1 {
+    color: white;
+
+}
+
+.g-hover-overlay p {
+    color: white;
+    font-size: 2vh;
 }
