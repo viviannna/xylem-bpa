@@ -3,6 +3,7 @@
 
 body {
     /*padding: 7.01%; */
+    font-family: 'Karla', sans-serif;
 
 }
 
@@ -31,8 +32,15 @@ nav a {
 h1 {
     font-family: 'Karla', sans-serif;
     font-weight: 700;
-    font-size: 50px;
+    font-size: 5vh;
 }
+
+h2 {
+    color: #2b612b;
+    font-weight: 700;
+    font-size: 4vh;
+}
+
 
 .banner-home-page h1 {
     font-size: 5vh;
@@ -152,18 +160,27 @@ p {
     
 } */
 
-/* ACTION CONTAINERS GO HERE */
+/****** ACTION CONTAINERS GO HERE ******/
+
+.box-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 
 /* size of each individual image itself */
 .g-hover-container {
     position: relative;
-    width: 400px;
+    width: 30%;
+
 
 }
 
 .g-hover-img {
     display: block;
     width: 100%;   /* ensures that the image takes up its full given space */
+    height: 100%;
+    object-fit: cover;
 
 
 }
@@ -182,7 +199,9 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     opacity: 0;
+
 
 
 }
@@ -195,10 +214,16 @@ p {
 
 .g-hover-overlay h1 {
     color: white;
+    margin-bottom: 0;
+    padding-bottom: 0;
+
 
 }
 
 .g-hover-overlay p {
     color: white;
     font-size: 2vh;
+    padding-left: 5vh;
+    padding-right: 5vh;
+
 }
