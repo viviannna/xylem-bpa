@@ -1,16 +1,38 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
 body {
     /*padding: 7.01%; */
     font-family: 'Karla', sans-serif;
 
 }
 
+.center-content {
+    padding-left: 14.02%;
+    padding-right: 14.02%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+}
+
 hr {
-    position: relative;
-    width: 35%;
+
+    width: 50%;
     border-top: .35vh solid #2b612b;
+    display: flex;
+    justify-content: center;
 
 }
 
@@ -91,100 +113,34 @@ p {
 }
 
 
-/* ---- THREE ROW BOX ---- */
 
-.three-row-box {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding-left: 14.01%;
-    padding-right: 14.01%;
-    padding-top: 5%;
-}
 
-.one-third-box {
-    
-    position: relative;
-    border: solid #2b612b 6px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-right: 2vh;
-    padding-left: 2vh;
-    padding-bottom: 2vh;
-    padding-top: 2vh;
+/*------------ THREE BOX ROW CODE GOES HERE -------------*/
 
-    width: 25%; 
-    height: 35vh; 
+/* HEIARCHY: box row > g-hover-container > g-hover-img */
 
-    text-align: center; 
-}
-
-/* I want this one to change when you hover over it */
-.fun-facts .one-third-box h1 {
-    font-weight: 700;
-    font-size: 4vh;
-    color: #467846;
-    margin-top: 0;
-    margin-bottom: 0;
-
-}
-
-.fun-facts .one-third-box p {
-    font-weight: 400;
-    font-size: 3vh;
-    color: #2b612b;
-}
-
-.center-content {
-    padding-left: 14.02%;
-    padding-right: 14.02%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    
-    text-align: center;
-
-    margin: 0;
-}
-
-/* .action-pages {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    object-fit: fill;
-    width: 25; 
-    height: 35vh; 
-
-    
-} */
-
-/****** ACTION CONTAINERS GO HERE ******/
-
+/* keeps everything evenly spaced and in a column */
 .box-row {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-/* size of each individual image itself */
+/* size of each individual image itself -- makes sure all are the same width  */
 .g-hover-container {
     position: relative;
     width: 30%;
-
-
 }
+
 
 .g-hover-img {
     display: block;
     width: 100%;   /* ensures that the image takes up its full given space */
     height: 100%;
     object-fit: cover;
-
-
 }
 
+/*** Help Us Make an Impact Action Cards ***/
 .g-hover-overlay {
     position: absolute;
     top: 0;
@@ -202,22 +158,16 @@ p {
     justify-content: center;
     opacity: 0;
 
-
-
 }
 
 .g-hover-overlay:hover {
     opacity: 1;
 }
 
-
-
 .g-hover-overlay h1 {
     color: white;
     margin-bottom: 0;
     padding-bottom: 0;
-
-
 }
 
 .g-hover-overlay p {
@@ -226,4 +176,95 @@ p {
     padding-left: 5vh;
     padding-right: 5vh;
 
+}
+
+
+/*** Fun Fact Cards **/
+
+.fun-fact-overlay {
+    border: #2b612b 4px solid;
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   
+   
+}
+
+.fun-fact-overlay:hover {
+    background-color: #2b612b;
+}
+
+.fun-fact-overlay h1 {
+    font-weight: 700;
+    font-size: 4vh;
+    color: #467846;
+    margin-top: 0;
+    margin-bottom: 0;
+
+}
+
+.fun-fact-overlay p {
+    font-weight: 400;
+    font-size: 3vh;
+    color: #2b612b;
+    padding-left: 5vh;
+    padding-right: 5vh;
+}
+
+.fun-fact-overlay:hover h1 {
+    color: white;
+
+
+
+}
+
+.fun-fact-overlay:hover p {
+    color: white;
+    
+}
+
+
+.one-third-box {
+    
+    position: relative;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 2vh;
+    padding-left: 2vh;
+    padding-bottom: 2vh;
+    padding-top: 2vh;
+
+    width: 25%; 
+    height: 35vh; 
+
+    text-align: center; 
+}
+
+/*--------- FOOTER ----------*/
+
+#container {
+    min-height: 100%;
+
+}
+
+#main {
+    overflow: auto;
+    padding-bottom: 15vh; /* makes sure that footer doesn't cover it */
+}
+
+#footer {
+    background-color: white;
+    position:relative;
+    height: 15vh;
+    margin-top: -15vh;
+    clear: both;
+}
+
+#footer .footer-line {
+    width: 100%;
+    color: black;
 }
